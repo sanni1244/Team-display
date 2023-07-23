@@ -7,34 +7,35 @@ const TeamSection = () => {
     const [teamMember, setTeamMembers] = useState([
         {
             id: 1,
+            name: "Pamela Rose",
+            role: "Backend Developer",
+            image: "https://t3.ftcdn.net/jpg/03/21/67/72/360_F_321677228_PybtVjGqx90y34jQzbyeALHhOncLC8DR.jpg",
+        },
+        {
+            id: 2,
             name: "Diana Zale",
             role: "CEO",
             image: "https://media.istockphoto.com/id/997661938/photo/close-up-portrait-of-smiling-pretty-girl-in-yellow-sweater-isolated-on-gray-background.jpg?s=612x612&w=0&k=20&c=ziL4OdLh1I5VlqRwoPJwrCid0gYjjGfnmtUUhalEQMk=",
         },
         {
-            id: 2,
+            id: 3,
             name: "Jane Smith",
             role: "Manager",
             image: "https://img.freepik.com/free-photo/portrait-dark-skinned-cheerful-woman-with-curly-hair-touches-chin-gently-laughs-happily-enjoys-day-off-feels-happy-enthusiastic-hears-something-positive-wears-casual-blue-turtleneck_273609-43443.jpg",
         },
         {
-            id: 3,
+            id: 4,
             name: "Adam Copeland",
             role: "DatabaseAdministrator",
             image: "https://media.istockphoto.com/id/1095898284/photo/portrait-of-thinking-young-man-looking-away.jpg?s=612x612&w=0&k=20&c=5Gq1OY470MHxs8c1J-spmJYg1Iwp4ABEzsaG2tUmG1Q=",
         },
         {
-            id: 4,
+            id: 5,
             name: "Mathew Jacob",
             role: "Director of Operations",
             image: "https://thumbs.dreamstime.com/b/young-man-smiling-beard-wearing-green-shirt-isolated-white-background-92802989.jpg",
         },
-        {
-            id: 5,
-            name: "Pamela Rose",
-            role: "Backend Developer",
-            image: "https://wrestlingnews.co/.image/t_share/MTkwMDM0MTMyNzMxNTY5MjQ1/bayley.jpg",
-        },
+        
     ]);
 
     function update(id, newName, newRole) {
