@@ -20,19 +20,19 @@ const TeamSection = () => {
         {
             id: 3,
             name: "Adam Copeland",
-            role: "Administrator",
+            role: "Database Administrator",
             image: "https://media.istockphoto.com/id/1095898284/photo/portrait-of-thinking-young-man-looking-away.jpg?s=612x612&w=0&k=20&c=5Gq1OY470MHxs8c1J-spmJYg1Iwp4ABEzsaG2tUmG1Q=",
         },
         {
             id: 4,
             name: "Mathew Jacob",
-            role: "Chef",
+            role: "Director of Operations",
             image: "https://thumbs.dreamstime.com/b/young-man-smiling-beard-wearing-green-shirt-isolated-white-background-92802989.jpg",
         },
         {
             id: 5,
             name: "Pamela Rose",
-            role: "Operations Manager",
+            role: "Backend Developer",
             image: "https://wrestlingnews.co/.image/t_share/MTkwMDM0MTMyNzMxNTY5MjQ1/bayley.jpg",
         },
     ]);
