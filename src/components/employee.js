@@ -20,7 +20,7 @@ const TeamSection = () => {
         {
             id: 3,
             name: "Adam Copeland",
-            role: "Database Administrator",
+            role: "DatabaseAdministrator",
             image: "https://media.istockphoto.com/id/1095898284/photo/portrait-of-thinking-young-man-looking-away.jpg?s=612x612&w=0&k=20&c=5Gq1OY470MHxs8c1J-spmJYg1Iwp4ABEzsaG2tUmG1Q=",
         },
         {
