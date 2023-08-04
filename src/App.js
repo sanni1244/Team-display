@@ -1,21 +1,24 @@
-import './App.css';
-import Employee from './components/employee';
-import { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import Navbar from './navbar';
+import Mainpage from './pages/mainpage';
+import ContactUs from './pages/contact';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Services from './pages/services';
+import About from './pages/about'
+import Footer from './pages/footer';
 function App() {
-  const [role, setRole] = useState('dev');
-  const showEmployees = true;
   return (
-    <div className="App bg-gray-100">
-     {
-      showEmployees ? (
-      <>
-      <Employee role={role}/>
-      </>
-      ) : (<p>No</p>)
-
-     }
-    </div>
+    <BrowserRouter>
+      {/* <Navbar /> */}
+      <Routes>
+        <Route path="/" element={<Mainpage />} />
+        {/* <Route path="/contact" element={<ContactUs />} /> */}
+        {/* <Route path="/services" element={<Services />} /> */}
+        {/* <Route path="/about" element={<About />} /> */}
+      </Routes>
+      {/* <Footer /> */}
+    </BrowserRouter>
   );
 }
+
 export default App;
