@@ -3,32 +3,26 @@ import { NavLink } from 'react-router-dom';
 
 const NavGate = (props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <>
-      <nav className="nav-bar bg-blue-500">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center">
-            <img
-              src="path/to/your-logo.png" // Replace with the path to your logo image
-              alt="Logo"
-              className="block h-10 w-20 rounded-full sm:mx-0 sm:shrink-0 object-cover border-4 border-white grid grid-cols-2 bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 fix-all"
-            />
-          </div>
-          <div className="hidden md:flex space-x-4">
+      <nav className="bg-gradient-to-r from-blue-400 to-purple-600 p-4">
+        <div className="container mx-auto flex justify-between items-center">
+          <div className="text-white font-bold text-xl navName1">PortFolio</div>
+          <div className="hidden md:flex space-x-10">
             <NavLink
+              exact
               to="/"
-              activeClassName="active" // This class will be applied to the active link
-              className="text-white font-bold"
+              activeClassName="active"
+              className="text-white font-bold hover:text-blue-300 "
             >
               Home
             </NavLink>
             <NavLink
-              to="/contact"
+              to="/Contact"
               activeClassName="active"
               className="text-white font-bold hover:text-blue-300"
             >
@@ -39,14 +33,14 @@ const NavGate = (props) => {
               activeClassName="active"
               className="text-white font-bold hover:text-blue-300"
             >
-              Services
+              Skills
             </NavLink>
             <NavLink
               to="/about"
               activeClassName="active"
               className="text-white font-bold hover:text-blue-300"
             >
-              About
+              About Me
             </NavLink>
           </div>
           <div className="md:hidden flex items-center">
@@ -89,28 +83,29 @@ const NavGate = (props) => {
         {isMenuOpen && (
           <div className="md:hidden mt-4">
             <NavLink
-              to="/"
+              exact
+              to="portfolio/"
               activeClassName="active"
-              className="block text-white font-bold py-2 px-4"
+              className="block text-white font-bold py-2 px-4 hover:text-blue-300"
             >
               Home
             </NavLink>
             <NavLink
-              to="/contact"
+              to="portfolio/contact"
               activeClassName="active"
               className="block text-white font-bold py-2 px-4 hover:text-blue-300"
             >
               Contact
             </NavLink>
             <NavLink
-              to="/services"
+              to="portfolio/services"
               activeClassName="active"
               className="block text-white font-bold py-2 px-4 hover:text-blue-300"
             >
               Services
             </NavLink>
             <NavLink
-              to="/about"
+              to="portfolio/about"
               activeClassName="active"
               className="block text-white font-bold py-2 px-4 hover:text-blue-300"
             >
@@ -125,4 +120,3 @@ const NavGate = (props) => {
 };
 
 export default NavGate;
-
